@@ -608,6 +608,11 @@ progress {
     height: auto
 }
 
+.img-fluid-l {
+    max-width: 15%;
+    height: auto
+}
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -8332,7 +8337,7 @@ fieldset:disabled .btn {
 }
 
 .text-white-50 {
-    color: rgba(255, 255, 255, 0.5) !important
+    color: #eee !important
 }
 
 .text-reset {
@@ -8368,7 +8373,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #452c25 !important
+    background-color: #37241e !important
 }
 
 .bg-body {
