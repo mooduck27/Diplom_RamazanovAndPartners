@@ -235,12 +235,12 @@ sup {
 }
 
 a {
-    color: #452c25;
+    color: #fff;
     text-decoration: none
 }
 
 a:hover {
-    color: #452c25
+    color: #aaaaaa
 }
 
 a:not([href]):not([class]),
@@ -7542,6 +7542,18 @@ fieldset:disabled .btn {
     align-items: center !important
 }
 
+.align-items-center-b {
+    align-items: center !important
+}
+
+.align-items-center-b a{
+    color: #452c25;
+}
+
+.align-items-center-b a:hover{
+    color: #573305;
+}
+
 .align-items-baseline {
     align-items: baseline !important
 }
@@ -7690,6 +7702,11 @@ fieldset:disabled .btn {
 
 .mx-auto {
     margin-right: auto !important;
+    margin-left: auto !important
+}
+
+.mx-auto-footer {
+    margin-right: 0 !important;
     margin-left: auto !important
 }
 

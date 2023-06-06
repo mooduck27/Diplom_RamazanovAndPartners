@@ -446,9 +446,10 @@
 }
 
 .footer .copyright a {
-    color: var(--secondary);
+
+    color: #fff;
 }
 
 .footer .copyright a:hover {
-    color: #FFFFFF;
+    color: #aaa;
 }
