@@ -1,9 +1,3 @@
-/*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
     --bs-blue: #573305;
     --bs-indigo: #6610f2;
@@ -67,16 +61,25 @@ hr:not([size]) {
     height: 1px
 }
 
-h1,
+h1, 
 .h1,
 h2,
 .h2,
+h5,
+.h5 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff
+}
+
+
 h3,
 .h3,
-h4,
+h4, 
 .h4,
-h5,
-.h5,
 h6,
 .h6 {
     margin-top: 0;
@@ -84,7 +87,7 @@ h6,
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 1.2;
-    color: #fff
+    color: #452c25
 }
 
 h1,
@@ -146,7 +149,7 @@ h5,
 
 h6,
 .h6 {
-    font-size: 1rem
+    font-size: 1.25rem
 }
 
 p {
@@ -232,12 +235,12 @@ sup {
 }
 
 a {
-    color: #452c25;
+    color: #fff;
     text-decoration: none
 }
 
 a:hover {
-    color: #452c25
+    color: #aaaaaa
 }
 
 a:not([href]):not([class]),
@@ -605,6 +608,11 @@ progress {
 
 .img-fluid {
     max-width: 100%;
+    height: auto
+}
+
+.img-fluid-l {
+    max-width: 15%;
     height: auto
 }
 
@@ -7534,6 +7542,18 @@ fieldset:disabled .btn {
     align-items: center !important
 }
 
+.align-items-center-b {
+    align-items: center !important
+}
+
+.align-items-center-b a{
+    color: #452c25;
+}
+
+.align-items-center-b a:hover{
+    color: #573305;
+}
+
 .align-items-baseline {
     align-items: baseline !important
 }
@@ -7682,6 +7702,11 @@ fieldset:disabled .btn {
 
 .mx-auto {
     margin-right: auto !important;
+    margin-left: auto !important
+}
+
+.mx-auto-footer {
+    margin-right: 0 !important;
     margin-left: auto !important
 }
 
@@ -8332,7 +8357,7 @@ fieldset:disabled .btn {
 }
 
 .text-white-50 {
-    color: rgba(255, 255, 255, 0.5) !important
+    color: #eee !important
 }
 
 .text-reset {
@@ -8368,7 +8393,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #452c25 !important
+    background-color: #37241e !important
 }
 
 .bg-body {
