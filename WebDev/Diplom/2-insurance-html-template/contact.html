@@ -9,6 +9,25 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- Send Message Script start-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function submitForm() {
+            $.ajax({
+                type: 'POST',
+                url: 'send_message.php',
+                data: $('#contact-form').serialize(),
+                success: function () {
+                    alert('Сообщение отправлено! Ожидайте ответа.');
+                },
+                error: function () {
+                    alert('Произошла ошибка. Повторите попытку позже.');
+                }
+            });
+        }
+    </script>
+    <!-- Send Message Script end-->
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -120,29 +139,36 @@
                     <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta hic molestias ut in
                         fugit nobis blanditiis sapiente cupiditate tempora voluptatum iusto laborum optio atque
                         similique aliquid, eligendi laudantium voluptatibus sed.</p>
-                    <form>
+                    <form id="contact-form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                     <label for="name">ФИО</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Ваша Почта</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                    <label for="email">Номер телефона</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="theme" name="theme" required>
+                                    <label for="name">Тема вопроса</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                    <textarea class="form-control" id="message" name="message"
                                         style="height: 100px"></textarea>
-                                    <label for="message">Сообщение...</label>
+                                    <label for="message">Сообщение</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary py-3 px-5" type="button"
+                                    onclick="submitForm()">Отправить</button>
                             </div>
                         </div>
                     </form>
@@ -180,18 +206,25 @@
                         <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                             stet lorem sit clita</p>
                         <div class="d-flex pt-2">
-                            <a class="text-white-50 ms-4" href="https://wa.me/79288528298"><i class="fab fa-whatsapp"></i></a>
-                            <a class="text-white-50 ms-4" href="https://t.me/moodck27"><i class="fab fa-telegram"></i></a>
-                            <a class="text-white-50 ms-4" href="https://www.youtube.com/channel/UCZYh3HwXG8D9l1OHXKSWjcg"><i class="fab fa-youtube"></i></a>
-                            <a class="text-white-50 ms-4" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-instagram"></i></a>
+                            <a class="text-white-50 ms-4" href="https://wa.me/79288528298"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a class="text-white-50 ms-4" href="https://t.me/moodck27"><i
+                                    class="fab fa-telegram"></i></a>
+                            <a class="text-white-50 ms-4"
+                                href="https://www.youtube.com/channel/UCZYh3HwXG8D9l1OHXKSWjcg"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="text-white-50 ms-4" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i
+                                    class="fab fa-instagram"></i></a>
                             <a class="text-white-50 ms-4" href="https://vk.com/mooduck27"><i class="fab fa-vk"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-light mb-4">Адрес</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i><a href="https://go.2gis.com/p6gwsc">123 Улица, Город</a></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i><a href="https://go.2gis.com/p6gwsc">123 Улица,
+                                Город</a></p>
                         <p><i class="fa fa-phone-alt me-3"></i><a href="tel:+7(999)888-77-66">+7(928)852-82-98</a></p>
-                        <p><i class="fa fa-envelope me-3"></i><a href="mailto:maxxx00528@mail.ru">maxxx00528@mail.ru</a></p>
+                        <p><i class="fa fa-envelope me-3"></i><a href="mailto:maxxx00528@mail.ru">maxxx00528@mail.ru</a>
+                        </p>
                     </div>
                     <div class="container-fluid copyright">
                         <div class="container">
@@ -228,4 +261,5 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 </body>
+
 </html>
