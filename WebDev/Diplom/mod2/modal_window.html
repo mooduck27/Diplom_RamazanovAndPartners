@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module">
+        import easySetup from "easy-toggler";
+        easySetup();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
+
+</head>
+<body>
+    
+    <div>
+        <button class="btn-start" easy-toggle="#modalWindow" easy-class="show">Click</button>
+    </div>
+
+    <div id="modalWindow" class="modal">
+        <div class="modal-window">
+            <form action="">
+                <button class="btn-close" easy-toggle="#modalWindow" easy-class="show">X</button>
+                <h1>text</h1>
+            </form>
+        </div>
+
+        <div class="overlay" easy-toggle="#modalWindow" easy-class="show"></div>
+    </div>

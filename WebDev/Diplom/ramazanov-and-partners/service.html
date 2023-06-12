@@ -9,6 +9,9 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -125,7 +128,7 @@
                         </div>
                         <p class="mb-4">Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem sit clita duo
                             justo erat amet</p>
-                        <a class="btn btn-light px-3" href="">Подробнее</a>
+                        <button id="openModal" class="btn btn-light px-3">Подробнее</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -197,6 +200,25 @@
         </div>
     </div>
     <!-- Service End -->
+
+
+    <!-- Modal window -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Modal Title</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    <!-- Modal window -->
 
 
     <!-- Footer Start -->
