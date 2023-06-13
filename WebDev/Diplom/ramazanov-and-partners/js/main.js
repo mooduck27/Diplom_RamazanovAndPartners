@@ -64,3 +64,18 @@
     
 })(jQuery);
 
+    // Modal window 
+    document.getElementById('openmodalwindow').addEventListener('click', function() {
+        document.getElementById('modalwindow').style.display = 'block';
+      });
+      
+      document.getElementById('closemodalwindow').addEventListener('click', function() {
+        document.getElementById('modalwindow').style.display = 'none';
+      });
+      
+      window.addEventListener('click', function(event) {
+        if (event.target == document.getElementById('modalwindow')) {
+          document.getElementById('modalwindow').style.display = 'none';
+        }
+      });
+      

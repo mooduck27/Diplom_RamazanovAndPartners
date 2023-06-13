@@ -7,21 +7,49 @@
   <title>Modal Window Example</title>
 </head>
 <body>
-  <button id="openModal">Open Modal</button>
+  <button id="openmodalwindow">Open Modal Window</button>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
-      <h2>Modal Title</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <button type="submit">Submit</button>
-      </form>
+  <div id="modalwindow" class="modalwindow">
+    <div class="modalwindow-content">
+      <span id="closemodalwindow" class="close">&times;</span>
+      <h2>modalwindow Title</h2>
+      <form id="contact-form">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="name" name="name" required>
+                    <label for="name">ФИО</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                    <label for="email">Номер телефона</label>
+                </div>
+            </div>
+            <select name="user_profile_color_1">
+              <option value="1">Выберите услугу</option>
+              <option value="2">Страхование жизни</option>
+              <option value="3">Медицинская страховка</option>
+              <option value="4">Страхование жилья</option>
+              <option value="5">Страхование транспортных средств</option>
+              <option value="6">Страхование бизнеса</option>
+              <option value="7">Страхование собственности</option>
+            </select>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" id="message" name="message"
+                        style="height: 100px"></textarea>
+                    <label for="message">Сообщение</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary py-3 px-5" type="button"
+                    onclick="submitForm()">Отправить</button>
+            </div>
+        </div>
+    </form>
+
     </div>
   </div>
 

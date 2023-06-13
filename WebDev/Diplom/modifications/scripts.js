@@ -11,4 +11,3 @@ document.getElementById('openModal').addEventListener('click', function() {
       document.getElementById('modal').style.display = 'none';
     }
   });
-  
