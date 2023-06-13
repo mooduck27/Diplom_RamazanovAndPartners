@@ -713,6 +713,17 @@ progress {
     margin-left: calc(var(--bs-gutter-x) / -2)
 }
 
+.row-c {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2)
+}
+
 .row>* {
     flex-shrink: 0;
     width: 100%;
@@ -7822,6 +7833,11 @@ fieldset:disabled .btn {
 }
 
 .mb-5 {
+    margin-bottom: 3rem !important
+}
+
+.mb-5-record {
+    margin-top: 3rem !important;
     margin-bottom: 3rem !important
 }
 
